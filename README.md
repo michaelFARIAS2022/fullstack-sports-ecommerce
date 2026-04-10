@@ -70,7 +70,7 @@ fullstack-sports-ecommerce/
 
 ### Página principal
 <p align="center">
-  <img src="docs/screenshots/home.png" width="80%">
+  <img src="docs/screenshots/Home.png" width="80%">
 </p>
 
 ### Tienda / servicios
