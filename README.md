@@ -66,14 +66,19 @@ fullstack-sports-ecommerce/
 ```
 
 ---
-
 ## 🖥️ Capturas del sistema
 
+### Página principal
 <p align="center">
-  <img src="docs/screenshots/home.png" width="45%">
-  <img src="docs/screenshots/tienda.png" width="45%">
+  <img src="docs/screenshots/home.png" width="80%">
 </p>
 
+### Tienda / servicios
 <p align="center">
-  <img src="docs/screenshots/about.png" width="45%">
+  <img src="docs/screenshots/tienda.png" width="80%">
+</p>
+
+### Vista institucional
+<p align="center">
+  <img src="docs/screenshots/about.png" width="80%">
 </p>
