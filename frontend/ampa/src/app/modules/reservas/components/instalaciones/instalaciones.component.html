@@ -1,0 +1,31 @@
+<!-- Heroes centrado (titulo presentacion instalaciones) -->
+
+<div class="px-4 py-5 my-5 text-center" id="heroes-reservas">
+  <img class="d-block mx-auto mb-4" id="imagen-heroes" src="../../../../../assets/img/fondoarticulos-logoampa.jpg" alt="heroes-imagen" width="400" height="400">
+    <h1 class="display-5 fw-bold text-body-emphasis">Instalaciones A.M.P.A.</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Hacer deporte regularmente es una de las mejores cosas que puedes hacer por tu salud física y mental.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      <a routerLink="/dashboard/reservas/agenda"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Reservas</button></a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- DIV INSTALACIONES -->
+  <div class="row">
+    <div *ngFor="let instalacion of instalaciones" class="col-md-6 col-lg-4">
+      <div class="card h-100">
+        <img [src]="instalacion.foto" class="card-img-top" alt="Imagen de la instalación">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h5 class="card-title">{{ instalacion.nombre }}</h5>
+          <p class="card-text">{{ instalacion.descripcion }}</p>
+          <div class="mt-auto text-center">
+            <a routerLink="/dashboard/reservas/agenda" class="btn btn-primary">Reservar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

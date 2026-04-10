@@ -1,0 +1,43 @@
+<div class="grid-container">
+  <h1 class="mat-h1">Dashboard Admin</h1>
+
+  <div class="productos" [ngClass]="{ 'fade-in': productosVisible }">
+    <button class="btn btn-lg btn-secondary btn-icon" (click)="mostrarProductos()">
+      Administrar productos
+      <mat-icon>{{ productosVisible ? 'keyboard_arrow_up' : 'keyboard_arrow_down' }}</mat-icon>
+    </button>
+    <app-ventas *ngIf="productosVisible"></app-ventas>
+  </div>
+
+  <div class="usuarios" [ngClass]="{ 'fade-in': usuariosVisible }">
+    <button class="btn btn-lg btn-secondary btn-icon" (click)="mostrarUsuarios()">
+      Administrar usuarios
+      <mat-icon>{{ usuariosVisible ? 'keyboard_arrow_up' : 'keyboard_arrow_down' }}</mat-icon>
+    </button>
+    <app-clientes *ngIf="usuariosVisible"></app-clientes>
+  </div>
+
+  <div class="reservas" [ngClass]="{ 'fade-in': reservasVisible }">
+    <button class="btn btn-lg btn-secondary btn-icon" (click)="mostrarReservas()">
+      Administrar Reservas
+      <mat-icon>{{ reservasVisible ? 'keyboard_arrow_up' : 'keyboard_arrow_down' }}</mat-icon>
+    </button>
+    <app-reservas *ngIf="reservasVisible"></app-reservas>
+  </div>
+
+  <div class="instalaciones" [ngClass]="{ 'fade-in': instalacionesVisible }">
+    <button class="btn btn-lg btn-secondary btn-icon" (click)="mostrarInstalaciones()">
+      Administrar Instalaciones
+      <mat-icon>{{ instalacionesVisible ? 'keyboard_arrow_up' : 'keyboard_arrow_down' }}</mat-icon>
+      </button>
+    <app-instalaciones *ngIf="instalacionesVisible"></app-instalaciones>
+  </div>
+  <div class="productos" [ngClass]="{ 'fade-in': ventasVisible }">
+    <button class="btn btn-lg btn-secondary btn-icon" (click)="mostrarVentas()">
+      Ventas
+      <mat-icon>{{ ventasVisible ? 'keyboard_arrow_up' : 'keyboard_arrow_down' }}</mat-icon>
+    </button>
+    <app-factura *ngIf="ventasVisible"></app-factura>
+  </div>
+</div>
+
